@@ -1,6 +1,6 @@
 package stepsDefinition.login;
 
-import core.DriverManager;
+import core.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,8 +9,8 @@ import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginStepsDef {
-    LoginPage loginPage = new LoginPage(DriverManager.getDriver()) ;
-    HomePage homePage = new HomePage(DriverManager.getDriver()) ;
+    LoginPage loginPage = new LoginPage(BaseTest.getDriver()) ;
+    HomePage homePage = new HomePage(BaseTest.getDriver()) ;
 
     @Given("I went to C-ticket Login page")
     public void iWentToCTicketLoginPage() {

@@ -7,13 +7,13 @@ public class CucumberHooks {
 
     @Before
     public static void setUp() {
-        BaseTest.createDriver("chrome");
+        BaseTest.createDriver();
         System.out.println("Setup before scenario");
     }
 
     @After
     public void tearDown() {
-//        BaseTest.closeDriver();
+        BaseTest.closeDriver();
         System.out.println("Cleanup after scenario");
     }
 
