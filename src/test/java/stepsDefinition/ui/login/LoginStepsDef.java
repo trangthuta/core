@@ -1,4 +1,4 @@
-package stepsDefinition.login;
+package stepsDefinition.ui.login;
 
 import core.DriverManager;
 import io.cucumber.java.en.And;
